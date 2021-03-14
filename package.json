@@ -7,13 +7,43 @@
     "setup": "yarn install --frozen-lockfile",
     "lint": "eslint --ext .js,.tsx ./",
     "prettier": "prettier --check ./",
-    "ci": "npm-run-all prettier lint"
+    "ts:check": "tsc --noEmit",
+    "ci": "npm-run-all prettier lint ts:check",
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "react-app-rewired test",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "4.0.3"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "^5.11.4",
+    "@types/jest": "^26.0.21",
+    "@types/node": "^14.14.35",
+    "@types/react": "^17.0.3",
+    "@types/react-dom": "^17.0.2",
     "eslint": "^7.20.0",
     "eslint-config-prettier": "^8.1.0",
     "npm-run-all": "^4.1.5",
     "prettier": "^2.2.1",
-    "prettier-plugin-packagejson": "^2.2.10"
+    "prettier-plugin-packagejson": "^2.2.10",
+    "react-app-rewired": "^2.1.8",
+    "sass": "^1.32.8",
+    "typescript": "^4.2.3"
   }
 }

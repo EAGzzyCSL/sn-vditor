@@ -1,3 +1,3 @@
 module.exports = {
-  extends: ['prettier'],
+  extends: ['react-app', 'react-app/jest', 'prettier'],
 }
