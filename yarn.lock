@@ -5013,6 +5013,11 @@ file-uri-to-path@1.0.0:
   resolved "https://registry.npm.taobao.org/file-uri-to-path/download/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
   integrity sha1-VTp7hEb/b2hDWcRF8eN6BdrMM90=
 
+filesafe-js@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npm.taobao.org/filesafe-js/download/filesafe-js-1.0.4.tgz#790a42bb760d1acea5a30f8f28a3dd7fdfc8a633"
+  integrity sha1-eQpCu3YNGs6low+PKKPdf9/IpjM=
+
 filesize@6.1.0:
   version "6.1.0"
   resolved "https://registry.npm.taobao.org/filesize/download/filesize-6.1.0.tgz#e81bdaa780e2451d714d71c0d7a4f3238d37ad00"
@@ -10051,6 +10056,11 @@ slice-ansi@^4.0.0:
     ansi-styles "^4.0.0"
     astral-regex "^2.0.0"
     is-fullwidth-code-point "^3.0.0"
+
+sn-editor-kit@^1.0.9:
+  version "1.0.9"
+  resolved "https://registry.npm.taobao.org/sn-editor-kit/download/sn-editor-kit-1.0.9.tgz#e37e884dfa820db0bb508192623ff7f3efc5f0e2"
+  integrity sha1-436ITfqCDbC7UIGSYj/38+/F8OI=
 
 snapdragon-node@^2.0.1:
   version "2.1.1"

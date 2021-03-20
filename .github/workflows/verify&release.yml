@@ -1,0 +1,27 @@
+on:
+  push:
+    branches:
+      - master
+jobs:
+  verify-then-release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@master
+
+      - name: Install
+        run: npm run setup
+
+      - name: Verify
+        run: npm run ci
+
+      - name: Build
+        run: npm run build && echo '' > dist/.nojekyll
+
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+          SINGLE_COMMIT: true

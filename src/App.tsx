@@ -1,8 +1,15 @@
 import './App.css'
 import React from 'react'
 
-function App(): JSX.Element {
-  return <div className='App'>sn-editor-template</div>
-}
+import Bridge from './common/Bridge'
+import Editor from './SimpleEditor/SimpleEditor'
 
-export default App
+const BridgedEditor = Bridge(Editor)
+
+export default function App(): JSX.Element {
+  return (
+    <div className='app'>
+      <BridgedEditor />
+    </div>
+  )
+}

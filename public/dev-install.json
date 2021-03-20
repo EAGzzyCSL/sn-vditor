@@ -1,0 +1,10 @@
+{
+  "identifier": "eagzzycsl.standardnotes.sn-editor-template",
+  "name": "SN-Editor-template",
+  "description": "Editor for Standard Notes use Editor-template",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "marketing_url": "https://www.github.com/eagzzycsl/sn-editor-template",
+  "version": "0.0.0",
+  "url": "http://localhost:9999"
+}

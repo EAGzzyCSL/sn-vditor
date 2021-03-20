@@ -9,10 +9,15 @@
     "prettier": "prettier --check ./",
     "ts:check": "tsc --noEmit",
     "ci": "npm-run-all prettier lint ts:check",
-    "start": "react-app-rewired start",
-    "build": "react-app-rewired build",
+    "dev": "react-app-rewired start",
     "test": "react-app-rewired test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build:cra": "react-app-rewired build",
+    "build:zip": "cd dist && rm -f pkg.zip  && zip -r pkg.zip hosted/*",
+    "build:install-dev": "node scripts/gen-install.js dev",
+    "build:install-local": "node scripts/gen-install.js local",
+    "build:install-prod": "node scripts/gen-install.js",
+    "build": "npm-run-all build:cra build:install-prod build:zip"
   },
   "browserslist": {
     "production": [
@@ -27,9 +32,11 @@
     ]
   },
   "dependencies": {
+    "filesafe-js": "^1.0.4",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
-    "react-scripts": "4.0.3"
+    "react-scripts": "4.0.3",
+    "sn-editor-kit": "^1.0.9"
   },
   "devDependencies": {
     "@testing-library/jest-dom": "^5.11.4",
