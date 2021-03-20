@@ -1,10 +1,10 @@
 {
-  "identifier": "eagzzycsl.standardnotes.sn-editor-template",
-  "name": "SN-Editor-template",
-  "description": "Editor for Standard Notes use Editor-template",
+  "identifier": "eagzzycsl.standardnotes.sn-vditor",
+  "name": "SN-Vditor",
+  "description": "Editor for Standard Notes use Vditor",
   "content_type": "SN|Component",
   "area": "editor-editor",
-  "marketing_url": "https://www.github.com/eagzzycsl/sn-editor-template",
+  "marketing_url": "https://www.github.com/eagzzycsl/sn-vditor",
   "version": "0.0.0",
   "url": "http://localhost:9999"
 }

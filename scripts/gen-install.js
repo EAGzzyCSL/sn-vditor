@@ -3,7 +3,7 @@ const path = require('path')
 
 const GITHUB_ID = 'eagzzycsl'
 
-const MD_EDITOR_NAME = 'editor-template'
+const MD_EDITOR_NAME = 'Vditor'
 
 const DISPLAY_NAME = `SN-${MD_EDITOR_NAME}`
 
