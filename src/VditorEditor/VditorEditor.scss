@@ -7,5 +7,9 @@
 .vditor-toolbar {
   display: flex;
   width: 100%;
-  overflow: auto;
+  overflow-x: scroll;
+}
+
+.vditor-panel--arrow {
+  position: fixed;
 }
