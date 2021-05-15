@@ -10,6 +10,7 @@ export default {
     enable: false,
   },
   preview: {
+    delay: 100,
     hljs: {
       lineNumber: true,
     },
@@ -40,5 +41,6 @@ export default {
     'edit-mode',
     'code-theme',
     'content-theme',
+    'preview',
   ] as string[],
 } as const
