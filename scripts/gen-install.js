@@ -7,6 +7,7 @@ const MD_EDITOR_NAME = 'Vditor'
 
 const DISPLAY_NAME = `SN-${MD_EDITOR_NAME}`
 
+// eslint-disable-next-line import/extensions
 const { name: packageID, version } = require('../package.json')
 
 const isLocal = process.argv.slice(2)[0] === 'local'

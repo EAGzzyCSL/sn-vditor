@@ -5,9 +5,7 @@ declare module 'sn-editor-kit' {
     constructor(options: {
       setEditorRawText: (rawText: string) => void
       clearUndoHistory: () => void
-      generateCustomPreview?: (
-        rawText: string,
-      ) => {
+      generateCustomPreview?: (rawText: string) => {
         html: string
         plain: string
       }
