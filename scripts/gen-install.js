@@ -2,6 +2,7 @@ const fs = require('fs')
 const path = require('path')
 
 const GITHUB_ID = 'eagzzycsl'
+const GITEE_ID = 'eagzzycsl'
 
 const MD_EDITOR_NAME = 'Vditor'
 
@@ -42,12 +43,21 @@ if (isDev) {
   const baseUrl = isLocal
     ? `http://localhost/webAccess/${packageID}`
     : `https://${GITHUB_ID}.github.io/${packageID}`
-  writeInstallJson('../dist/install.json', {
+
+  const jsonContent = {
     ...baseInstallJsonContent,
     version,
     url: `${baseUrl}/hosted/index.html`,
     download_url: `${baseUrl}/pkg.zip`,
     latest_url: `${baseUrl}/install.json`,
     thumbnail_url: `${baseUrl}/thumbnail.jpg`,
+  }
+  writeInstallJson('../dist/install.json', jsonContent)
+
+  const giteeBaseUrl = `https://${GITEE_ID}.gitee.io/${packageID}`
+
+  writeInstallJson('../dist/install.url.use.gitee.json', {
+    ...jsonContent,
+    url: `${giteeBaseUrl}/hosted/index.html`,
   })
 }

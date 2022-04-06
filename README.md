@@ -6,6 +6,5 @@ StandardNotes Extension Editor，use [vditor](https://b3log.org/vditor/demo/inde
 
 ## 安装链接
 
-```plain
-https://eagzzycsl.github.io/sn-vditor/install.json
-```
+- github：[https://eagzzycsl.github.io/sn-vditor/install.json](https://eagzzycsl.github.io/sn-vditor/install.json)
+- online editor use gitee：[https://eagzzycsl.github.io/sn-vditor/install.url.use.gitee.json](https://eagzzycsl.github.io/sn-vditor/install.url.use.gitee.json)
