@@ -1,6 +1,6 @@
 {
   "name": "sn-vditor",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "private": true,
   "license": "AGPL-3.0-or-later",
   "scripts": {
@@ -13,7 +13,7 @@
     "test": "react-app-rewired test",
     "eject": "react-scripts eject",
     "build:cra": "react-app-rewired build",
-    "build:zip": "cd dist && rm -f pkg.zip  && zip -r pkg.zip hosted/*",
+    "build:zip": "cd dist && rm -f pkg.zip && zip -r pkg.zip hosted/*",
     "build:install-dev": "node scripts/gen-install.js dev",
     "build:install-local": "node scripts/gen-install.js local",
     "build:install-prod": "node scripts/gen-install.js",
