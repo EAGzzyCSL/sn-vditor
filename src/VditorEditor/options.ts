@@ -1,10 +1,12 @@
+import pkgJson from '../../package.json'
+
 const SELF_CDN = 'vditor-cdn-self'
 
 const createVditorOptions = (o: IOptions): IOptions => o
 
 export default createVditorOptions({
   icon: 'material',
-  placeholder: 'type here to start new note',
+  placeholder: `type here to start new note\nversion: ${pkgJson.version}`,
   width: '100%',
   height: '100%',
   toolbarConfig: {
