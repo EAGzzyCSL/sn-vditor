@@ -1,0 +1,13 @@
+{
+  "identifier": "eagzzycsl.standardnotes.sn-vditor",
+  "name": "SN-Vditor",
+  "description": "Editor for Standard Notes use Vditor",
+  "content_type": "SN|Component",
+  "area": "editor-editor",
+  "marketing_url": "https://www.github.com/eagzzycsl/sn-vditor",
+  "version": "0.0.122",
+  "url": "https://eagzzycsl.gitee.io/sn-vditor/hosted/index.html",
+  "download_url": "https://eagzzycsl.github.io/sn-vditor/pkg.zip",
+  "latest_url": "https://eagzzycsl.github.io/sn-vditor/install.json",
+  "thumbnail_url": "https://eagzzycsl.github.io/sn-vditor/thumbnail.jpg"
+}
